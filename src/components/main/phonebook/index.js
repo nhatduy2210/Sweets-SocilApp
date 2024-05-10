@@ -41,6 +41,9 @@ const PhoneBookScreen = props => {
         <Text style={styles.txtFlat2}>Danh sách bạn bè</Text>
      
         <View style={{ flexDirection: 'row', marginHorizontal: 10, marginVertical: 5 }}>
+        <TouchableOpacity style={styles.imgOption} onPress={() => navigation.navigate('Bluetooth')}>
+            <Image source={require('../../../assets/qr-codess.png')} style={styles.buttonImg2} />
+          </TouchableOpacity>
           <TouchableOpacity style={styles.imgOption} onPress={() => navigation.navigate('QuetQR')}>
             <Image source={require('../../../assets/qr-codess.png')} style={styles.buttonImg2} />
           </TouchableOpacity>
